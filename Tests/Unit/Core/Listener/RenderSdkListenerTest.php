@@ -4,32 +4,32 @@
  * under the MIT LICENSE. To use this application you must leave intact this copyright 
  * notice.
  *
- * Copyright (c) AlphaLemon <webmaster@alphalemon.com>
+ * Copyright (c) RedKiteCms <info@redkite-labs.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * For extra documentation and help please visit http://www.alphalemon.com
+ * For extra documentation and help please visit http://www.redkite-labs.com
  * 
  * @license    MIT LICENSE
  *
  */
 
-namespace AlphaLemon\Block\SocialBlockBundle\Tests\Unit\Core\Listener;
+namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Listener;
 
-use AlphaLemon\AlphaLemonCmsBundle\Tests\TestCase;
-use AlphaLemon\Block\SocialBlockBundle\Core\Listener\RenderSdk;
+use RedKiteLabs\RedKiteCmsBundle\Tests\TestCase;
+use RedKiteCms\Block\SocialBlockBundle\Core\Listener\RenderSdk;
 
 /**
  * LanguagesFormTest
  *
- * @author AlphaLemon <webmaster@alphalemon.com>
+ * @author RedKite Labs <info@redkite-labs.com>
  */
 class RenderSdkListenerTest extends TestCase
 {
     public function testOnKernelResponseDoesNothingWhenAnySdkIsProvided()
     {
-        $sdkCollection = $this->getMockBuilder('AlphaLemon\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection')
+        $sdkCollection = $this->getMockBuilder('RedKiteCms\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection')
             ->disableOriginalConstructor()
             ->getMock()
         ;
@@ -53,7 +53,7 @@ class RenderSdkListenerTest extends TestCase
      */
     public function testOnKernelResponse($skds, $responseContent, $expectedResult)
     {
-        $sdkCollection = $this->getMockBuilder('AlphaLemon\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection')
+        $sdkCollection = $this->getMockBuilder('RedKiteCms\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection')
             ->disableOriginalConstructor()
             ->getMock()
         ;
@@ -133,7 +133,7 @@ class RenderSdkListenerTest extends TestCase
     
     private function initSdk($tag, $content)
     {
-        $sdk = $this->getMock('AlphaLemon\Block\SocialBlockBundle\Core\Sdk\SdkInterface');
+        $sdk = $this->getMock('RedKiteCms\Block\SocialBlockBundle\Core\Sdk\SdkInterface');
         $sdk
             ->expects($this->once())
             ->method('render')

@@ -4,32 +4,32 @@
  * under the MIT LICENSE. To use this application you must leave intact this copyright 
  * notice.
  *
- * Copyright (c) AlphaLemon <webmaster@alphalemon.com>
+ * Copyright (c) RedKiteCms <info@redkite-labs.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * For extra documentation and help please visit http://www.alphalemon.com
+ * For extra documentation and help please visit http://www.redkite-labs.com
  * 
  * @license    MIT LICENSE
  *
  */
 
-namespace AlphaLemon\Block\SocialBlockBundle\Tests\Unit\Core\SdkCollection;
+namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\SdkCollection;
 
-use AlphaLemon\AlphaLemonCmsBundle\Tests\TestCase;
-use AlphaLemon\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection;
+use RedKiteLabs\RedKiteCmsBundle\Tests\TestCase;
+use RedKiteCms\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection;
 
 /**
  * LanguagesFormTest
  *
- * @author AlphaLemon <webmaster@alphalemon.com>
+ * @author RedKite Labs <info@redkite-labs.com>
  */
 class RenderSdkListenerTest extends TestCase
 {
     public function testAddSkd()
     {
-        $sdk = $this->getMock('AlphaLemon\Block\SocialBlockBundle\Core\Sdk\SdkInterface');
+        $sdk = $this->getMock('RedKiteCms\Block\SocialBlockBundle\Core\Sdk\SdkInterface');
         
         $collection = new SdkCollection();
         $collection->addSdk($sdk);

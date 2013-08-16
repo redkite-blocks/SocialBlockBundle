@@ -4,26 +4,26 @@
  * under the MIT LICENSE. To use this application you must leave intact this copyright 
  * notice.
  *
- * Copyright (c) AlphaLemon <webmaster@alphalemon.com>
+ * Copyright (c) RedKiteCms <info@redkite-labs.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * For extra documentation and help please visit http://www.alphalemon.com
+ * For extra documentation and help please visit http://www.redkite-labs.com
  * 
  * @license    MIT LICENSE
  * 
  */
 
-namespace AlphaLemon\Block\SocialBlockBundle\Core\Listener;
+namespace RedKiteCms\Block\SocialBlockBundle\Core\Listener;
 
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
-use AlphaLemon\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection;
+use RedKiteCms\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection;
 
 /**
  * Renders the used SDKs at the end of the page
  *
- * @author AlphaLemon <info@alphalemon.com>
+ * @author RedKite Labs <info@redkite-labs.com>
  */
 class RenderSdk
 {

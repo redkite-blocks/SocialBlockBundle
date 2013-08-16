@@ -4,24 +4,26 @@
  * under the MIT LICENSE. To use this application you must leave intact this copyright 
  * notice.
  *
- * Copyright (c) AlphaLemon <webmaster@alphalemon.com>
+ * Copyright (c) RedKiteCms <info@redkite-labs.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * For extra documentation and help please visit http://www.alphalemon.com
+ * For extra documentation and help please visit http://www.redkite-labs.com
  * 
  * @license    MIT LICENSE
  * 
  */
 
-namespace AlphaLemon\Block\SocialBlockBundle\Core\Form\Twitter;
+namespace RedKiteCms\Block\SocialBlockBundle\Core\Form\Twitter;
 
-use AlphaLemon\AlphaLemonCmsBundle\Core\Form\JsonBlock\JsonBlockType;
+use RedKiteLabs\RedKiteCmsBundle\Core\Form\JsonBlock\JsonBlockType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 /**
  * Implements the form to manage the facebook like button attributes
+ *
+ * @author RedKite Labs <info@redkite-labs.com>
  */
 class TwitterShareType extends JsonBlockType
 {

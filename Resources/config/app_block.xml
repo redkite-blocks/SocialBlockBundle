@@ -16,22 +16,22 @@
             <parameter>@SocialBlockBundle/Resources/public/js/twitter_share.js</parameter>
         </parameter>
 
-        <parameter key="facebook_like_button.block.class">AlphaLemon\Block\SocialBlockBundle\Core\Block\AlBlockManagerFacebookLikeButton</parameter>
-        <parameter key="twitter_share.block.class">AlphaLemon\Block\SocialBlockBundle\Core\Block\AlBlockManagerTwitterShare</parameter>
-        <parameter key="facebook_like.form.class">AlphaLemon\Block\SocialBlockBundle\Core\Form\Facebook\FacebookLikeType</parameter>
-        <parameter key="facebook_open_graph.form.class">AlphaLemon\Block\SocialBlockBundle\Core\Form\Facebook\FacebookOpenGraphType</parameter>
-        <parameter key="twitter_share.form.class">AlphaLemon\Block\SocialBlockBundle\Core\Form\Twitter\TwitterShareType</parameter>
+        <parameter key="facebook_like_button.block.class">RedKiteCms\Block\SocialBlockBundle\Core\Block\AlBlockManagerFacebookLikeButton</parameter>
+        <parameter key="twitter_share.block.class">RedKiteCms\Block\SocialBlockBundle\Core\Block\AlBlockManagerTwitterShare</parameter>
+        <parameter key="facebook_like.form.class">RedKiteCms\Block\SocialBlockBundle\Core\Form\Facebook\FacebookLikeType</parameter>
+        <parameter key="facebook_open_graph.form.class">RedKiteCms\Block\SocialBlockBundle\Core\Form\Facebook\FacebookOpenGraphType</parameter>
+        <parameter key="twitter_share.form.class">RedKiteCms\Block\SocialBlockBundle\Core\Form\Twitter\TwitterShareType</parameter>
     </parameters>
 
     <services>
         <service id="facebook_like_button.block" class="%facebook_like_button.block.class%">
             <argument type="service" id="service_container"/>
-            <tag name="alphalemon_cms.blocks_factory.block" description="Facebook Like Button" type="FacebookLikeButton" group="social,Social" />
+            <tag name="red_kite_cms.blocks_factory.block" description="Facebook Like Button" type="FacebookLikeButton" group="social,Social" />
         </service>
         
         <service id="twitter_share.block" class="%twitter_share.block.class%">            
             <argument type="service" id="service_container" />
-            <tag name="alphalemon_cms.blocks_factory.block" description="Twitter Share" type="TwitterShare" group="social,Social" />
+            <tag name="red_kite_cms.blocks_factory.block" description="Twitter Share" type="TwitterShare" group="social,Social" />
         </service>
         
         <service id="facebook_like.form" class="%facebook_like.form.class%">

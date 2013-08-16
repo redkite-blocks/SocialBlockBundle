@@ -4,21 +4,21 @@
  * under the MIT LICENSE. To use this application you must leave intact this copyright 
  * notice.
  *
- * Copyright (c) AlphaLemon <webmaster@alphalemon.com>
+ * Copyright (c) RedKiteCms <info@redkite-labs.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * For extra documentation and help please visit http://www.alphalemon.com
+ * For extra documentation and help please visit http://www.redkite-labs.com
  * 
  * @license    MIT LICENSE
  * 
  */
 
-namespace AlphaLemon\Block\SocialBlockBundle\Tests\Unit\Core\Block;
+namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Block;
 
-use AlphaLemon\AlphaLemonCmsBundle\Tests\Unit\Core\Content\Block\Base\AlBlockManagerContainerBase;
-use AlphaLemon\Block\SocialBlockBundle\Core\Block\AlBlockManagerFacebookLikeButton;
+use RedKiteLabs\RedKiteCmsBundle\Tests\Unit\Core\Content\Block\Base\AlBlockManagerContainerBase;
+use RedKiteCms\Block\SocialBlockBundle\Core\Block\AlBlockManagerFacebookLikeButton;
 
 class AlBlockManagerFacebookLikeButtonTester extends AlBlockManagerFacebookLikeButton
 {
@@ -306,7 +306,7 @@ class AlBlockManagerFacebookLikeTest extends AlBlockManagerContainerBase
                         "title" : "the title",
                         "type" : "the type",
                         "image" : "the image",
-                        "site_name" : "http://alphalemon.com",
+                        "site_name" : "http://RedKiteCms.com",
                         "admins" : "123456789"
                     }
                 }',
@@ -324,7 +324,7 @@ class AlBlockManagerFacebookLikeTest extends AlBlockManagerContainerBase
                 '<meta property="ob:title" content="the title" />' . PHP_EOL .
                 '<meta property="ob:type" content="the type" />' . PHP_EOL .
                 '<meta property="ob:image" content="the image" />' . PHP_EOL .
-                '<meta property="ob:site_name" content="http://alphalemon.com" />' . PHP_EOL .
+                '<meta property="ob:site_name" content="http://RedKiteCms.com" />' . PHP_EOL .
                 '<meta property="fb:admins" content="123456789" />' . PHP_EOL,
             ),
         );
@@ -332,7 +332,7 @@ class AlBlockManagerFacebookLikeTest extends AlBlockManagerContainerBase
     
     private function initBlock($value)
     {
-        $block = $this->getMock('AlphaLemon\AlphaLemonCmsBundle\Model\AlBlock');
+        $block = $this->getMock('RedKiteLabs\RedKiteCmsBundle\Model\AlBlock');
         $block->expects($this->once())
               ->method('getContent')
               ->will($this->returnValue($value));

@@ -1,9 +1,9 @@
 The Social Block Bundle
 =======================
-This bundle provides social network buttons as AlphaLemon CMS App-Blocks and renders 
+This bundle provides social network buttons as RedKiteCms CMS App-Blocks and renders 
 the required SDK for each social network.
 
-[![Build Status](https://secure.travis-ci.org/alphalemon/SocialBlockBundle.png)](http://travis-ci.org/alphalemon/SocialBlockBundle)
+[![Build Status](https://secure.travis-ci.org/RedKiteCms/SocialBlockBundle.png)](http://travis-ci.org/RedKiteCms/SocialBlockBundle)
 
 Supported Buttons
 -----------------
@@ -24,7 +24,7 @@ file:
 
     {
         "require": {
-            "alphalemon/app-social-block-bundle": "1.0.*"
+            "RedKiteCms/app-social-block-bundle": "1.0.*"
         }
     }
 

@@ -4,26 +4,26 @@
  * under the MIT LICENSE. To use this application you must leave intact this copyright 
  * notice.
  *
- * Copyright (c) AlphaLemon <webmaster@alphalemon.com>
+ * Copyright (c) RedKiteCms <info@redkite-labs.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * For extra documentation and help please visit http://www.alphalemon.com
+ * For extra documentation and help please visit http://www.redkite-labs.com
  * 
  * @license    MIT LICENSE
  *
  */
 
-namespace AlphaLemon\Block\SocialBlockBundle\Tests\Unit\Core\Form\Twitter;
+namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Form\Twitter;
 
-use AlphaLemon\AlphaLemonCmsBundle\Tests\Unit\Core\Form\Base\AlBaseType;
-use AlphaLemon\Block\SocialBlockBundle\Core\Form\Twitter\TwitterShareType;
+use RedKiteLabs\RedKiteCmsBundle\Tests\Unit\Core\Form\Base\AlBaseType;
+use RedKiteCms\Block\SocialBlockBundle\Core\Form\Twitter\TwitterShareType;
 
 /**
  * LanguagesFormTest
  *
- * @author AlphaLemon <webmaster@alphalemon.com>
+ * @author RedKite Labs <info@redkite-labs.com>
  */
 class TwitterShareTypeTest extends AlBaseType
 {

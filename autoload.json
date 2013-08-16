@@ -1,6 +1,6 @@
 {
     "bundles" : {
-        "AlphaLemon\\Block\\SocialBlockBundle\\SocialBlockBundle" : {
+        "RedKiteCms\\Block\\SocialBlockBundle\\SocialBlockBundle" : {
             "environments" : ["all"]
         }
     }

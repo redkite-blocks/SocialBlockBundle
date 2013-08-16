@@ -1,6 +1,6 @@
 <?php
 
-namespace AlphaLemon\Block\SocialBlockBundle\DependencyInjection;
+namespace RedKiteCms\Block\SocialBlockBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

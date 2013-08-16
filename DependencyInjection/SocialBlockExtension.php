@@ -1,6 +1,6 @@
 <?php
 
-namespace AlphaLemon\Block\SocialBlockBundle\DependencyInjection;
+namespace RedKiteCms\Block\SocialBlockBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

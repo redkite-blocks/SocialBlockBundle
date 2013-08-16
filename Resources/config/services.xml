@@ -5,10 +5,10 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="social_sdk.listener.class">AlphaLemon\Block\SocialBlockBundle\Core\Listener\RenderSdk</parameter>
-        <parameter key="social_sdk.sdk_collection.class">AlphaLemon\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection</parameter>
-        <parameter key="social_sdk.facebook_interface.class">AlphaLemon\Block\SocialBlockBundle\Core\Sdk\SdkFacebook</parameter>
-        <parameter key="social_sdk.twitter_interface.class">AlphaLemon\Block\SocialBlockBundle\Core\Sdk\SdkTwitter</parameter>
+        <parameter key="social_sdk.listener.class">RedKiteCms\Block\SocialBlockBundle\Core\Listener\RenderSdk</parameter>
+        <parameter key="social_sdk.sdk_collection.class">RedKiteCms\Block\SocialBlockBundle\Core\SdkCollection\SdkCollection</parameter>
+        <parameter key="social_sdk.facebook_interface.class">RedKiteCms\Block\SocialBlockBundle\Core\Sdk\SdkFacebook</parameter>
+        <parameter key="social_sdk.twitter_interface.class">RedKiteCms\Block\SocialBlockBundle\Core\Sdk\SdkTwitter</parameter>
     </parameters>
 
     <services>

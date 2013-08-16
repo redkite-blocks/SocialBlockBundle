@@ -4,21 +4,21 @@
  * under the MIT LICENSE. To use this application you must leave intact this copyright 
  * notice.
  *
- * Copyright (c) AlphaLemon <webmaster@alphalemon.com>
+ * Copyright (c) RedKiteCms <info@redkite-labs.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * For extra documentation and help please visit http://www.alphalemon.com
+ * For extra documentation and help please visit http://www.redkite-labs.com
  * 
  * @license    MIT LICENSE
  * 
  */
 
-namespace AlphaLemon\Block\SocialBlockBundle\Tests\Unit\Core\Block;
+namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Block;
 
-use AlphaLemon\AlphaLemonCmsBundle\Tests\Unit\Core\Content\Block\Base\AlBlockManagerContainerBase;
-use AlphaLemon\Block\SocialBlockBundle\Core\Block\AlBlockManagerTwitterShare;
+use RedKiteLabs\RedKiteCmsBundle\Tests\Unit\Core\Content\Block\Base\AlBlockManagerContainerBase;
+use RedKiteCms\Block\SocialBlockBundle\Core\Block\AlBlockManagerTwitterShare;
 
 /**
  * AlBlockManagerTwitterShareTest
@@ -147,37 +147,37 @@ class AlBlockManagerTwitterShareTest extends AlBlockManagerContainerBase
                         "text" : "an awesome tweet",
                         "via" : "",
                         "related" : "",
-                        "hashtags" : "#alphalemoncms",
+                        "hashtags" : "#RedKiteCmscms",
                         "size" : "",
                         "dnt" : "", 
                         "count" : "", 
                         "lang" : ""
                     }
                 }',
-                'data-url="/path/to/twitter" data-text="an awesome tweet" data-hashtags="#alphalemoncms"',
+                'data-url="/path/to/twitter" data-text="an awesome tweet" data-hashtags="#RedKiteCmscms"',
             ),
             array(
                 '{
                     "0" : {
                         "url" : "/path/to/twitter",
                         "text" : "an awesome tweet",
-                        "via" : "@alphalemoncms",
-                        "related" : "@alphalemoncms",
-                        "hashtags" : "#alphalemoncms",
+                        "via" : "@RedKiteCmscms",
+                        "related" : "@RedKiteCmscms",
+                        "hashtags" : "#RedKiteCmscms",
                         "size" : "large",
                         "dnt" : "true", 
                         "count" : "vertical", 
                         "lang" : "en"
                     }
                 }',
-                'data-url="/path/to/twitter" data-text="an awesome tweet" data-via="@alphalemoncms" data-related="@alphalemoncms" data-hashtags="#alphalemoncms" data-size="large" data-dnt="true" data-count="vertical" data-lang="en"',
+                'data-url="/path/to/twitter" data-text="an awesome tweet" data-via="@RedKiteCmscms" data-related="@RedKiteCmscms" data-hashtags="#RedKiteCmscms" data-size="large" data-dnt="true" data-count="vertical" data-lang="en"',
             ),
         );
     }
     
     private function initBlock($value)
     {
-        $block = $this->getMock('AlphaLemon\AlphaLemonCmsBundle\Model\AlBlock');
+        $block = $this->getMock('RedKiteLabs\RedKiteCmsBundle\Model\AlBlock');
         $block->expects($this->once())
               ->method('getContent')
               ->will($this->returnValue($value));
