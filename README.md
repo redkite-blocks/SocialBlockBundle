@@ -24,7 +24,7 @@ file:
 
     {
         "require": {
-            "RedKiteCms/app-social-block-bundle": "1.0.*"
+            "redkite-cms/social-block-bundle": "1.0.*"
         }
     }
 

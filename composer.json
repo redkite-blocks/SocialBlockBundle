@@ -2,7 +2,7 @@
   "name": "redkite-cms/social-block-bundle",
   "description": "A RedKiteCms CMS app to manage social buttons for several social networks",
   "keywords": ["RedKiteCms", "cms", "app"],
-  "homepage": "http://RedKiteCms.com",
+  "homepage": "http://redkite-labs.com",
   "type": "redkite-cms-app",
   "license": "MIT",
   "authors": [
