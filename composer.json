@@ -1,28 +1,28 @@
 {
-  "name": "RedKiteCms/app-social-block-bundle",
-  "description": "An RedKiteCms CMS app to manage social buttons from several social networks",
+  "name": "redkite-cms/social-block-bundle",
+  "description": "A RedKiteCms CMS app to manage social buttons for several social networks",
   "keywords": ["RedKiteCms", "cms", "app"],
   "homepage": "http://RedKiteCms.com",
-  "type": "symfony-bundle",
+  "type": "redkite-cms-app",
   "license": "MIT",
   "authors": [
     {
-      "name": "RedKiteCms",
+      "name": "RedKite Labs",
       "email": "info@redkite-labs.com"
     }
   ],
   "repositories": [
-    {
-       "type": "composer",
-       "url": "http://apps.RedKiteCms.com/"
-    }
+      {
+          "type": "composer",
+          "url": "http://apps.redkite-labs.com/"
+      }
   ],
   "autoload": {
       "psr-0": { "RedKiteCms\\Block\\SocialBlockBundle": ""
     }
   },
   "require-dev": {
-      "RedKiteCms/RedKiteCms-cms-bundle": "dev-master",
+      "redkite-labs/redkite-cms-bundle": "dev-master",
       "willdurand/propel-typehintable-behavior": "dev-master"
   },
   "target-dir" : "RedKiteCms/Block/SocialBlockBundle",
