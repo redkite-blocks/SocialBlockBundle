@@ -44,11 +44,6 @@ class FacebookOpenGraphTypeTest extends AlBaseType
         return new FacebookOpenGraphType();
     }
     
-    public function testDefaultOptions()
-    {
-        $this->assertEquals(array('csrf_protection' =>false), $this->getForm()->getDefaultOptions(array()));
-    }
-    
     public function testGetName()
     {
         $this->assertEquals('al_open_graph', $this->getForm()->getName());

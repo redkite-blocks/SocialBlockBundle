@@ -32,8 +32,6 @@ class FacebookOpenGraphType extends JsonBlockType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        parent::buildForm($builder, $options);
-        
         $builder->add('url');
         $builder->add('title');
         $builder->add('type', 'choice', array('choices' => 
@@ -79,17 +77,9 @@ class FacebookOpenGraphType extends JsonBlockType
         ));
         $builder->add('image');
         $builder->add('site_name');
-        $builder->add('admins');
-    }
-    
-    /**
-     *  @{inheritdoc}
-     */
-    public function getDefaultOptions(array $options)
-    {
-        $values = parent::getDefaultOptions($options);
+        $builder->add('admins'); 
         
-        return $values;
+        parent::buildForm($builder, $options);
     }
     
     /**

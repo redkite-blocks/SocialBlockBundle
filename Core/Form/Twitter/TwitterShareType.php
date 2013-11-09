@@ -32,8 +32,6 @@ class TwitterShareType extends JsonBlockType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        parent::buildForm($builder, $options);
-        
         $builder->add('url');
         $builder->add('text', 'textarea');
         $builder->add('via');
@@ -42,16 +40,8 @@ class TwitterShareType extends JsonBlockType
         $builder->add('size', 'choice', array('choices' => array('' => 'small', 'large' => 'large')));
         $builder->add('dnt', 'choice', array('choices' => array('' => 'false', 'true' => 'true')));
         $builder->add('count', 'choice', array('choices' => array('horizontal' => 'horizontal', 'vertical' => 'vertical', 'none' => 'false')));
-        $builder->add('lang');                
-    }
-    
-    /**
-     *  @{inheritdoc}
-     */
-    public function getDefaultOptions(array $options)
-    {
-        $values = parent::getDefaultOptions($options);
+        $builder->add('lang');  
         
-        return $values;
+        parent::buildForm($builder, $options);            
     }
 }

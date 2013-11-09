@@ -47,11 +47,6 @@ class TwitterShareTypeTest extends AlBaseType
         return new TwitterShareType();
     }
     
-    public function testDefaultOptions()
-    {
-        $this->assertEquals(array('csrf_protection' =>false), $this->getForm()->getDefaultOptions(array()));
-    }
-    
     public function testGetName()
     {
         $this->assertEquals('al_json_block', $this->getForm()->getName());

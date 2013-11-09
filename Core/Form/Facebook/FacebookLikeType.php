@@ -32,8 +32,6 @@ class FacebookLikeType extends JsonBlockType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        parent::buildForm($builder, $options);
-        
         $builder->add('url');
         $builder->add('send', 'checkbox');
         $builder->add('layout', 'choice', array('choices' => array('standard' => 'standard', 'button_count' => 'button_count', 'box_count' => 'box_count')));
@@ -41,17 +39,9 @@ class FacebookLikeType extends JsonBlockType
         $builder->add('show_faces', 'checkbox');
         $builder->add('font', 'choice', array('choices' => array('arial' => 'arial', 'lucida grande' => 'lucida grande', 'segoe ui' => 'segoe ui', 'tahoma' => 'tahoma', 'trebuchet ms' => 'trebuchet ms', 'verdana' => 'verdana' )));
         $builder->add('colorscheme', 'choice', array('choices' => array('light' => 'light', 'dark' => 'dark')));
-        $builder->add('action', 'choice', array('choices' => array('like' => 'like', 'recommend' => 'recommend')));                
-    }
-    
-    /**
-     *  @{inheritdoc}
-     */
-    public function getDefaultOptions(array $options)
-    {
-        $values = parent::getDefaultOptions($options);
+        $builder->add('action', 'choice', array('choices' => array('like' => 'like', 'recommend' => 'recommend')));    
         
-        return $values;
+        parent::buildForm($builder, $options);
     }
     
     /**
