@@ -17,3 +17,15 @@
  .al-social-editor {
      padding: 6px;
  }
+
+ #rk-facebook-editor-tabs {
+     font: normal 16px/20px Arial, Verdana, Helvetica, sans-serif;
+ }
+ 
+ #rk-social-editor-commands {
+     margin-top: 10px;
+ }
+ 
+ .rk-social-notes {
+     font-size: 14px;
+ }

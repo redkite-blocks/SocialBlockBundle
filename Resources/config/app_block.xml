@@ -5,7 +5,7 @@
 
     <parameters>        
         <parameter key="facebooklikebutton.external_stylesheets.cms" type="collection">
-            <parameter>@SocialBlockBundle/Resources/public/css/block_fixer.css</parameter>
+            <parameter>@SocialBlockBundle/Resources/public/css/social_editor.css</parameter>
         </parameter>
         
         <parameter key="facebooklikebutton.external_javascripts.cms" type="collection">

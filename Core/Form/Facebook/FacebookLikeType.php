@@ -25,7 +25,7 @@ use Symfony\Component\Form\FormBuilderInterface;
  *
  * @author RedKite Labs <info@redkite-labs.com>
  */
-class FacebookLikeType extends JsonBlockType
+class FacebookLikeType extends \RedKiteLabs\RedKiteCmsBundle\Core\Form\Base\BaseBlockType
 {
     /**
      *  @{inheritdoc}

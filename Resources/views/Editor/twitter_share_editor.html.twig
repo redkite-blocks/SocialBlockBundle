@@ -1,1 +1,6 @@
-{% include "RedKiteCmsBundle:Block:Editor/_editor_form.html.twig" %}
+{% extends "RedKiteCmsBundle:Block:Editor/_editor_form.html.twig" %}
+
+{% block editor %}
+    {{ parent() }}
+    <div>Leave the url empty to use the current page url</div>
+{% endblock %}

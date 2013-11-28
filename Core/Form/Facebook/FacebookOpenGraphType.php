@@ -25,7 +25,7 @@ use Symfony\Component\Form\FormBuilderInterface;
  *
  * @author RedKite Labs <info@redkite-labs.com>
  */
-class FacebookOpenGraphType extends JsonBlockType
+class FacebookOpenGraphType extends \RedKiteLabs\RedKiteCmsBundle\Core\Form\Base\BaseBlockType
 {
     /**
      *  @{inheritdoc}

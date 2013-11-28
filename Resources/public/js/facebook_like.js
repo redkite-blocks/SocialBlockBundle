@@ -4,13 +4,18 @@ $(document).ready(function() {
             return;
         }
         
-        $('#al_facebook_editor_tabs').tab('show');
+        $('#rk-facebook-editor-tabs').tab('show');
         
         $('.al_editor_save').unbind().click(function()
         {
-            $(document).EditBlock('Content', $('#al_facebook_form').serialize(), null, function(){
+            var data = $('#al_like_form').serialize() + '&' + $('#al_graph_form').serialize();
+            $(document).EditBlock('Content', data, null, function(){
                 $('body').find('.fb-like').each(function(){
+                    try {
                         FB.XFBML.parse();
+                    } catch(e){
+                        // // prevents an error when facebook is not available, i.e. when working offline
+                    }    
                 });
             });
 
