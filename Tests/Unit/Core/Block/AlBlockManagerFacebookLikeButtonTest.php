@@ -103,20 +103,20 @@ class AlBlockManagerFacebookLikeTest extends AlBlockManagerContainerBase
                     ->will($this->returnValue($this->initForm()))
         ;
         
-        $this->container->expects($this->at(2))
+        $this->container->expects($this->at(3))
                         ->method('get')
                         ->with('form.factory')
                         ->will($this->returnValue($formFactory))
         ;
         
         $formType = $this->getMock('Symfony\Component\Form\FormTypeInterface');
-        $this->container->expects($this->at(3))
+        $this->container->expects($this->at(4))
                         ->method('get')
                         ->with('facebook_like.form')
                         ->will($this->returnValue($formType))
         ;
         
-        $this->container->expects($this->at(4))
+        $this->container->expects($this->at(5))
                         ->method('get')
                         ->with('facebook_open_graph.form')
                         ->will($this->returnValue($formType))

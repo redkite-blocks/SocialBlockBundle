@@ -69,7 +69,7 @@ class AlBlockManagerTwitterShareTest extends AlBlockManagerContainerBase
         $this->initContainer();
         
         $formType = $this->getMock('Symfony\Component\Form\FormTypeInterface');
-        $this->container->expects($this->at(2))
+        $this->container->expects($this->at(3))
                         ->method('get')
                         ->with('twitter_share.form')
                         ->will($this->returnValue($formType))
@@ -88,7 +88,7 @@ class AlBlockManagerTwitterShareTest extends AlBlockManagerContainerBase
                     ->will($this->returnValue($form))
         ;
         
-        $this->container->expects($this->at(3))
+        $this->container->expects($this->at(4))
                         ->method('get')
                         ->with('form.factory')
                         ->will($this->returnValue($formFactory))
