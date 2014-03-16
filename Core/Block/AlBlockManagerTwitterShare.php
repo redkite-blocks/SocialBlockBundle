@@ -17,7 +17,7 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Core\Block;
 
-use RedKiteLabs\RedKiteCmsBundle\Core\Content\Block\JsonBlock\AlBlockManagerJsonBlockContainer;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Core\Content\Block\JsonBlock\AlBlockManagerJsonBlockContainer;
 
 /**
  * Implements the Block Manager to manage the twitter share button

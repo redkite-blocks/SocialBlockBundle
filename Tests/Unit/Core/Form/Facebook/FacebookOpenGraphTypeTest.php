@@ -17,7 +17,7 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Form\Facebook;
 
-use RedKiteLabs\RedKiteCmsBundle\Tests\Unit\Core\Form\Base\AlBaseType;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\Unit\Core\Form\Base\AlBaseType;
 use RedKiteCms\Block\SocialBlockBundle\Core\Form\Facebook\FacebookOpenGraphType;
 
 /**

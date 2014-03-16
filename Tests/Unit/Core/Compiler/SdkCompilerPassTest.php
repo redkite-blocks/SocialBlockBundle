@@ -17,7 +17,7 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Compiler;
 
-use RedKiteLabs\RedKiteCmsBundle\Tests\TestCase;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\TestCase;
 use RedKiteCms\Block\SocialBlockBundle\Core\Compiler\SdkCompilerPass;
 
 /**

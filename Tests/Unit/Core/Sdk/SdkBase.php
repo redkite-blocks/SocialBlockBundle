@@ -17,7 +17,7 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Sdk;
 
-use RedKiteLabs\RedKiteCmsBundle\Tests\TestCase;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\TestCase;
 
 /**
  * LanguagesFormTest

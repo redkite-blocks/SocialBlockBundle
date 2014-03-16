@@ -17,7 +17,7 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Block;
 
-use RedKiteLabs\RedKiteCmsBundle\Tests\Unit\Core\Content\Block\Base\AlBlockManagerContainerBase;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\Unit\Core\Content\Block\Base\AlBlockManagerContainerBase;
 use RedKiteCms\Block\SocialBlockBundle\Core\Block\AlBlockManagerTwitterShare;
 
 /**
@@ -177,7 +177,7 @@ class AlBlockManagerTwitterShareTest extends AlBlockManagerContainerBase
     
     private function initBlock($value)
     {
-        $block = $this->getMock('RedKiteLabs\RedKiteCmsBundle\Model\AlBlock');
+        $block = $this->getMock('RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Model\AlBlock');
         $block->expects($this->once())
               ->method('getContent')
               ->will($this->returnValue($value));

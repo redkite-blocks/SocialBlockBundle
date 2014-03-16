@@ -17,8 +17,8 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Core\Block;
 
-use RedKiteLabs\RedKiteCmsBundle\Core\Content\Block\AlBlockManagerContainer;
-use RedKiteLabs\RedKiteCmsBundle\Core\Content\Block\JsonBlock\AlBlockManagerJsonBlock;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Core\Content\Block\AlBlockManagerContainer;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Core\Content\Block\JsonBlock\AlBlockManagerJsonBlock;
 
 /**
  * Implements the Block Manager to manage the facebook like button
