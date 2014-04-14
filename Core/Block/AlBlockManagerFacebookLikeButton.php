@@ -17,15 +17,15 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Core\Block;
 
-use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Core\Content\Block\AlBlockManagerContainer;
-use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Core\Content\Block\JsonBlock\AlBlockManagerJsonBlock;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Core\Content\Block\BlockManagerContainer;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Core\Content\Block\JsonBlock\BlockManagerJsonBlock;
 
 /**
  * Implements the Block Manager to manage the facebook like button
  *
  * @author RedKite Labs <info@redkite-labs.com>
  */
-class AlBlockManagerFacebookLikeButton extends AlBlockManagerContainer
+class AlBlockManagerFacebookLikeButton extends BlockManagerContainer
 {
     /**
      *  @{inheritdoc}
@@ -62,7 +62,7 @@ class AlBlockManagerFacebookLikeButton extends AlBlockManagerContainer
      */
     protected function renderHtml()
     {
-        $items = AlBlockManagerJsonBlock::decodeJsonContent($this->alBlock->getContent());
+        $items = BlockManagerJsonBlock::decodeJsonContent($this->alBlock->getContent());
         $options = $items["like"]; 
         
         if ($options['url'] == "") {
@@ -84,7 +84,7 @@ class AlBlockManagerFacebookLikeButton extends AlBlockManagerContainer
      */
     public function getMetaTags()
     {
-        $items = AlBlockManagerJsonBlock::decodeJsonContent($this->alBlock->getContent());
+        $items = BlockManagerJsonBlock::decodeJsonContent($this->alBlock->getContent());
         
         $result = "";
         $metatags = $items["graph"]; 
@@ -113,7 +113,7 @@ class AlBlockManagerFacebookLikeButton extends AlBlockManagerContainer
      */
     public function editorParameters()
     {
-        $items = AlBlockManagerJsonBlock::decodeJsonContent($this->alBlock->getContent());
+        $items = BlockManagerJsonBlock::decodeJsonContent($this->alBlock->getContent());
 
         $formFactory = $this->container->get('form.factory');
         $likeForm = $formFactory->create($this->container->get('facebook_like.form'), $this->fixBooleanConversion($items["like"]));
