@@ -17,7 +17,7 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Block;
 
-use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\Unit\Core\Content\Block\Base\AlBlockManagerContainerBase;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\Unit\Core\Content\Block\Base\BlockManagerContainerBase;
 use RedKiteCms\Block\SocialBlockBundle\Core\Block\AlBlockManagerFacebookLikeButton;
 
 class AlBlockManagerFacebookLikeButtonTester extends AlBlockManagerFacebookLikeButton
@@ -31,7 +31,7 @@ class AlBlockManagerFacebookLikeButtonTester extends AlBlockManagerFacebookLikeB
 /**
  * AlBlockManagerTwitterShareTest
  */
-class AlBlockManagerFacebookLikeTest extends AlBlockManagerContainerBase
+class AlBlockManagerFacebookLikeTest extends BlockManagerContainerBase
 {   
     public function testDefaultValue()
     {
@@ -332,7 +332,7 @@ class AlBlockManagerFacebookLikeTest extends AlBlockManagerContainerBase
     
     private function initBlock($value)
     {
-        $block = $this->getMock('RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Model\AlBlock');
+        $block = $this->getMock('RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Model\Block');
         $block->expects($this->once())
               ->method('getContent')
               ->will($this->returnValue($value));

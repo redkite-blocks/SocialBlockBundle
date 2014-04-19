@@ -17,7 +17,7 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Form\Facebook;
 
-use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\Unit\Core\Form\Base\AlBaseType;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\Unit\Core\Form\Base\BaseType;
 use RedKiteCms\Block\SocialBlockBundle\Core\Form\Facebook\FacebookOpenGraphType;
 
 /**
@@ -25,7 +25,7 @@ use RedKiteCms\Block\SocialBlockBundle\Core\Form\Facebook\FacebookOpenGraphType;
  *
  * @author RedKite Labs <info@redkite-labs.com>
  */
-class FacebookOpenGraphTypeTest extends AlBaseType
+class FacebookOpenGraphTypeTest extends BaseType
 {
     protected function configureFields()
     {

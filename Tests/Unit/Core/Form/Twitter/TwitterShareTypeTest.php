@@ -17,7 +17,7 @@
 
 namespace RedKiteCms\Block\SocialBlockBundle\Tests\Unit\Core\Form\Twitter;
 
-use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\Unit\Core\Form\Base\AlBaseType;
+use RedKiteLabs\RedKiteCms\RedKiteCmsBundle\Tests\Unit\Core\Form\Base\BaseType;
 use RedKiteCms\Block\SocialBlockBundle\Core\Form\Twitter\TwitterShareType;
 
 /**
@@ -25,7 +25,7 @@ use RedKiteCms\Block\SocialBlockBundle\Core\Form\Twitter\TwitterShareType;
  *
  * @author RedKite Labs <info@redkite-labs.com>
  */
-class TwitterShareTypeTest extends AlBaseType
+class TwitterShareTypeTest extends BaseType
 {
     protected function configureFields()
     {
